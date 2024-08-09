@@ -1,0 +1,21 @@
+.cubo {
+    width: 100px;
+    height: 100px;
+    background-color: #ff0000;
+    perspective: 400px; /* Define la perspectiva para la proyección 3D */
+    transform-style: preserve-3d; /* Mantiene la forma del cubo durante la animación */
+  }
+  
+  .cubo.animado {
+    animation: mover-cubo 2s linear infinite; /* Define la animación */
+  }
+  
+  @keyframes mover-cubo {
+    from {
+      transform: translateX(100%); /* Inicia el cubo fuera de la pantalla a la derecha */
+    }
+    to {
+      transform: translateX(0); /* Mueve el cubo hacia la izquierda */
+    }
+  }
+  
